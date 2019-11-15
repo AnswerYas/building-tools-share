@@ -1,0 +1,6 @@
+node_modules
+*.log
+webpack/dll_lib/
+.vscode
+.DS_Store
+.idea

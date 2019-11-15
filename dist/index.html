@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      :root {
+        --bgColor: #242d3f;
+      }
+      body {
+        text-align: center;
+        background-color: var(--bgColor);
+      }
+      .tzzy {
+        font-size: 120px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          cyan,
+          blue,
+          purple
+        );
+        animation: hue 2s linear infinite;
+      }
+      @keyframes hue {
+        from {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="tzzy" id="root"></h2>
+    <h1 class="tzzy">天泽智云</h1>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
